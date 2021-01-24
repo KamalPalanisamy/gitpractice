@@ -23,23 +23,16 @@ describe("Using_Assertions", function()
                 /*Below is the code for assertion to check whether particular full text is matching
                 in "Cypress". Since 'should()' is inbuilt chai method, it takes care of automatic
                 promise handling of "text()" method which is "Non-Cypress" method.*/
-                cy.get("div[class='brand greenLogo']").should('have.text','BLUECART')
+                cy.get("div[class='brand greenLogo']").should('have.text','SUNCART')
 
                 /*Hello Kamal Palanisamy. Welcome to Self-made Millionares Club.*/
-                
-                /*Note that in this example, we are having 4 webelements that matches with the same
-                "CSS Selector" cy.get("div[class='product']").
-
-                so to verify whether we have 4 webelements are present with same "CSS Selector" we are
-                using "Assertions" from "Chai" Framework.*/
-
-                /*should() is Assertion Syntax in "Chai" framework in "Cypress" automation tool.
-                should('have.length',4) meaning we are checking assertions whether there are
-                four webelements that are present with same "CSS Selector". */
+                /*Hello Barani Palanisamy. Welcome to Millionares Club.*/
 
                 cy.get("div[class='product']").should('have.length',4);
 
-                cy.wait(4000);
+                /*Kamal's life will become very good.*/
+
+                cy.wait(6000);
 
                 /*If we want to eliminate invisible webelement and include only visible webelement,
                 then in "Cypress Automation" we have to use "JQUERY Selector" command  :visible
