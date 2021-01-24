@@ -1,4 +1,4 @@
-/*This changes were done on Jan 24 2021, 3:53 PM EST*/
+/*This changes were done on Jan 24 2021, 4:04 PM EST*/
 
 describe("Using_Assertions", function()
     {
@@ -23,19 +23,9 @@ describe("Using_Assertions", function()
                 /*Below is the code for assertion to check whether particular full text is matching
                 in "Cypress". Since 'should()' is inbuilt chai method, it takes care of automatic
                 promise handling of "text()" method which is "Non-Cypress" method.*/
-                cy.get("div[class='brand greenLogo']").should('have.text','GREENKART')
+                cy.get("div[class='brand greenLogo']").should('have.text','YELLOWKART')
 
-                /*If you want to check whether partial text[NOT FULL TEXT] is matching in "Cypress".
-                Then you should use below code, if you uncomment the below code, then it should work:
-
-                 cy.get("div[class='brand greenLogo']").then(function (element)
-                    {
-                        const text_msg=element.text();
-
-                     expect(text_msg.includes("KART")).to.be.true;
-                })*/
-
-
+              
                 /*Note that in this example, we are having 4 webelements that matches with the same
                 "CSS Selector" cy.get("div[class='product']").
 
