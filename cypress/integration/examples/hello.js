@@ -18,14 +18,12 @@ describe("Using_Assertions", function()
                 similar to "sendkeys()" method in Selenium. */
                 cy.get("input[type='search']").type("ca");
 
-                /*"cy.wait(4000)" in Cypress helps Cypress automation tool to wait for 4 seconds. This
-                is similar to Thread.sleep(4000) in Selenium automation. */
-                cy.wait(4000);
+
 
                 /*Below is the code for assertion to check whether particular full text is matching
                 in "Cypress". Since 'should()' is inbuilt chai method, it takes care of automatic
                 promise handling of "text()" method which is "Non-Cypress" method.*/
-                cy.get("div[class='brand greenLogo']").should('have.text','GREENKART');
+                cy.get("div[class='brand greenLogo']").should('have.text','GREENKART')
 
                 /*If you want to check whether partial text[NOT FULL TEXT] is matching in "Cypress".
                 Then you should use below code, if you uncomment the below code, then it should work:
