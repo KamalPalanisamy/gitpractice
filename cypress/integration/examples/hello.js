@@ -1,4 +1,4 @@
-/*This changes were done on Jan 24 2021, 4:04 PM EST*/
+/*This changes were done on Jan 24 2021, 4:32 PM EST*/
 
 describe("Using_Assertions", function()
     {
@@ -23,9 +23,10 @@ describe("Using_Assertions", function()
                 /*Below is the code for assertion to check whether particular full text is matching
                 in "Cypress". Since 'should()' is inbuilt chai method, it takes care of automatic
                 promise handling of "text()" method which is "Non-Cypress" method.*/
-                cy.get("div[class='brand greenLogo']").should('have.text','YELLOWKART')
+                cy.get("div[class='brand greenLogo']").should('have.text','BLUECART')
 
-              
+                /*Hello Kamal Palanisamy. Welcome to Self-made Millionares Club.*/
+                
                 /*Note that in this example, we are having 4 webelements that matches with the same
                 "CSS Selector" cy.get("div[class='product']").
 
